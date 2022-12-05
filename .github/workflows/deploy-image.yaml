@@ -16,7 +16,6 @@ jobs:
         echo "MY_SECRET_KEY=${{ secrets.MY_SECRET_KEY }}" >> my_settings.py
         echo "MY_DATABASES=${{ secrets.MY_DATABASES }}" >> my_settings.py
         cat my_settings.py
-        ls -al
       
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
